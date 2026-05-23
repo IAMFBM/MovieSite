@@ -45,7 +45,7 @@ function FetchMovie(url)
              const center = document.createElement('center');
 
              image.src = IMG_PATH + EachResult.poster_path;
-             Movie_title.innerHTML = `${EachResult.title}`;
+             Movie_title.innerHTML = `${EachResult.title} <br> <a href="Movie.html?id=${EachResult.id}&title=${EachResult.title}">Review</a>`;
 
              center.appendChild(image);
              tumbnail_div.appendChild(center);
